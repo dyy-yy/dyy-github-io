@@ -1,59 +1,162 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"
-        <title>我的有声相册</title>
-    </head>
-    <body>
-        <h3>
-           <a href="#meinv">熊出没</a>
-           <a href="#meinve">熊大</a>
-           <a href="#xionger">熊二</a>
-           <a href="#guangtouq">光头强</a>
-        </h3>
-        
-        <h2 id="meinv">熊出没</h2>
-        <a href="#meinv-big">
-            <img src="/111.png" width="200" alt="熊出没大"
-        </a>
-        <div id="meinv-big">
-            <img src="/111.png" width="600" alt="熊出没大大图">
-            <br>
-            <abdio src="/111.png" controls></abdio>
-        </div>
-        <hr>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>2025-2026-2第5周课程表</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+        body {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid #fff;
+            text-align: center;
+            padding: 10px;
+            vertical-align: middle;
+            word-break: break-all;
+        }
+        /* 表头样式 */
+        .week-th {
+            background-color: #2196F3;
+            color: #fff;
+            height: 50px;
+        }
+        .time-th {
+            background-color: #f5f5f5;
+            width: 80px;
+        }
+        /* 课程颜色完全匹配截图 */
+        .course-red { background-color: #ff8a80; }
+        .course-orange { background-color: #ffab91; }
+        .course-purple { background-color: #b39ddb; }
+        .course-pink { background-color: #ffab91; }
+        .course-lightblue { background-color: #90caf9; }
+        .course-yellow { background-color: #ffb74d; }
+        .course-green { background-color: #81c784; }
+    </style>
+</head>
+<body>
+    <h1>2025-2026-2第5周课程表</h1>
+    <table>
+        <!-- 表头行：严格8列（节次+周一到周日） -->
+        <tr>
+            <th class="time-th week-th">节次</th>
+            <th class="week-th">周一<br>06</th>
+            <th class="week-th">周二<br>07</th>
+            <th class="week-th">周三<br>08</th>
+            <th class="week-th">周四<br>09</th>
+            <th class="week-th">周五<br>10</th>
+            <th class="week-th">周六<br>11</th>
+            <th class="week-th">周日<br>12</th>
+        </tr>
 
-        <h2 id="meinve">熊大</h2>
-        <a href="#meinve-big">
-            <img src="/555.webp" width="200" alt="熊大"
-        </a>
-        <div id="meinve-big">
-            <img src="/555.webp" width="600" alt="熊大大图">
-            <br>
-            <abdio src="/555.webp" controls></abdio>
-        </div>
-        <hr>
+        <!-- 一大节（01-02节，rowspan=2合并） -->
+        <tr>
+            <td class="time-th" rowspan="2">一大节<br>01,02</td>
+            <td></td>
+            <td rowspan="2" class="course-red">数据结构与算法基础*<br>-罗勇胜<br>@3-A-7<br>05</td>
+            <td rowspan="2" class="course-orange">Web前端开发技术-梅雨竹@3<br>-A-705</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-        <h2 id="xionger">熊二</h2>
-        <a href="#xionger-big">
-            <img src="/777.webp" width="200" alt="熊二"
-        </a>
-        <div id="xionger-big">
-            <img src="/777.webp" width="600" alt="熊二大图">
-            <br>
-            <abdio src="/777.webp" controls></abdio>
-        </div>
-        <hr>
+        <!-- 二大节（03-04节，rowspan=2合并） -->
+        <tr>
+            <td class="time-th" rowspan="2">二大节<br>03,04</td>
+            <td></td>
+            <td rowspan="2" class="course-purple">数据结构与算法基础*<br>-罗勇胜<br>@3-A-7<br>05</td>
+            <td rowspan="2" class="course-orange">Web前端开发技术-梅雨竹@3<br>-A-705</td>
+            <td></td>
+            <td rowspan="2" class="course-pink">大学国文-苏妙云<br>@5-9-301</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-        <h2 id="guangtouq">光头强</h2>
-        <a href="#guangtouq-big">
-            <img src="/444.webp" width="200" alt="光头强"
-        </a>
-        <div id="guangtouq-big">
-            <img src="/444.webp" width="600" alt="光头强大图">
-            <br>
-            <abdio src="/444.webp" controls></abdio>
-        </div>
-        <hr>
-    </body>
+        <!-- 三大节（05-06节，rowspan=2合并） -->
+        <tr>
+            <td class="time-th" rowspan="2">三大节<br>05,06</td>
+            <td></td>
+            <td rowspan="2" class="course-purple">C#程序设计与应用（B）-李俊<br>@信息中心6</td>
+            <td></td>
+            <td rowspan="2" class="course-lightblue">体育*-姚鸿彬<br>@操场</td>
+            <td rowspan="2" class="course-yellow">数据库应用*-朱敏<br>@信息中心6<br>05</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- 四大节（07-08节，rowspan=2合并） -->
+        <tr>
+            <td class="time-th" rowspan="2">四大节<br>07,08</td>
+            <td></td>
+            <td rowspan="2" class="course-green">C#程序设计与应用（B）-李俊<br>@信息中心6</td>
+            <td></td>
+            <td></td>
+            <td rowspan="2" class="course-red">数据库应用*-朱敏<br>@信息中心6<br>05</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- 五大节（09-10节） -->
+        <tr>
+            <td class="time-th">五大节<br>09,10</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
 </html>
